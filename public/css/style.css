@@ -1,0 +1,129 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+}
+
+body {
+  height: 1000px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: bold;
+}
+
+nav.navbar {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top {
+  background-color: transparent;
+}
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top a:hover {
+  color: #E8CB7E;
+}
+
+header.jumbotron {
+  text-align: center;
+  background-image: url(http://yourshot.nationalgeographic.com/u/fQYSUbVfts-T7odkrFJckdiFeHvab0GWOfzhj7tYdC0uglagsDcT0VW_-5uPhJJXJZ7-XzYUjwXbtLvYSeYxcjNm9qzWLCGipfQsOvD4jxon-EFqGfMuCrW-QTLEOzuDxbwwwBbhlo4W8HxXhm412YfpUifG3XoNuI9TBA8BccUnopMEfTQk-9UFXT5KbwkcLiG5bCGGF0S2rS68HslOfHS8/);
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 0px;
+  color: #FFFDF5;
+  padding: 300px 0px;
+}
+header.jumbotron hr {
+  max-width: 100px;
+  border: solid 2px #E8CB7E;
+}
+header.jumbotron h4 {
+  color: rgba(255, 253, 245, 0.8);
+}
+
+section {
+  padding: 50px;
+}
+
+section#section_ask {
+  background-color: #E8CB7E;
+}
+section#section_ask .col-sm-5.img {
+  background-image: url(https://www.commondreams.org/sites/default/files/styles/cd_large/public/headlines/earth_1.jpg?itok=R63Ee4ss);
+  height: 300px;
+  mix-blend-mode: normal;
+}
+section#section_ask h2 {
+  margin-top: 90px;
+  padding: 0px 10px;
+  color: #243242;
+}
+
+section#section_about img {
+  width: 150%;
+}
+section#section_about .img_wrap {
+  height: 200px;
+  overflow: hidden;
+}
+
+section#section_story {
+  background-color: #2B3541;
+  color: white;
+  padding: 0px;
+}
+section#section_story .col-sm-5 {
+  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/9a/70/48/9a7048d6e24fbd010f13148079dce690.jpg);
+  background-size: 100% auto;
+  height: 400px;
+}
+section#section_story .col-sm-7 {
+  text-align: center;
+  margin-top: 20px;
+  color: #B6BFBA;
+}
+section#section_story .col-sm-7 hr {
+  border: solid 0.5px #B6BFBA;
+}
+section#section_story .col-sm-7 i {
+  font-size: 40px;
+}
+section#section_story .col-sm-12.features {
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+section#section_future img {
+  width: 100%;
+}
+section#section_future .feature {
+  padding: 30px 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer.jumbotron {
+  text-align: center;
+  background-image: url(http://yourshot.nationalgeographic.com/u/fQYSUbVfts-T7odkrFJckdiFeHvab0GWOfzhj7tYdC0uglagsDcT0VW_-5uPhJJXJZ7-XzYUjwXbtLvYSeYxcjNm9qzWLCGipfQsOvD4jxon-EFqGfMuCrW-QTLEOzuDxbwwwBbhlo4W8HxXhm412YfpUifG3XoNuI9TBA8BccUnopMEfTQk-9UFXT5KbwkcLiG5bCGGF0S2rS68HslOfHS8/);
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 0px;
+  color: #FFFDF5;
+  padding: 120px 0px;
+}
+footer.jumbotron input {
+  background-color: transparent;
+  border: solid 1px white;
+  color: white;
+}
+footer.jumbotron hr {
+  max-width: 100px;
+  border: solid 2px #E8CB7E;
+}
+footer.jumbotron .btn {
+  font-family: 微軟正黑體;
+}
