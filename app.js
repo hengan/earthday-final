@@ -1,20 +1,30 @@
 var express     = require('express'),
     app         = express(),
     path        = require('path'),
-    bodyParser  = require('body-parser'),
-    routers     = require('./routers'),
     port        = process.env.PORT || 3000;
 
-// view engine setup
-app.set('views', path.join(__dirname, 'public/views'));
-app.set('view engine', 'ejs');
+// using webpack-dev-server and middleware in development environment
+if(process.env.NODE_ENV !== 'production') {
+  var webpackDevMiddleware = require('webpack-dev-middleware');
+  var webpackHotMiddleware = require('webpack-hot-middleware');
+  var webpack = require('webpack');
+  var config = require('./webpack.config');
+  var compiler = webpack(config);
 
-// static file path and middleware
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+  app.use(webpackDevMiddleware(compiler, { noInfo: true, publicPath: config.output.publicPath }));
+  app.use(webpackHotMiddleware(compiler));
+}
 
-// router setup
-app.use('/', routers);
+app.use(express.static(__dirname + '/public'));
 
-app.listen(port);
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+app.listen(port, function(error) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.info("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", port, port);
+  }
+});

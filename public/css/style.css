@@ -34,7 +34,7 @@ header.jumbotron {
   background-attachment: fixed;
   margin-bottom: 0px;
   color: #FFFDF5;
-  padding: 300px 0px;
+  padding: 200px 0px;
 }
 header.jumbotron hr {
   max-width: 100px;
@@ -101,9 +101,9 @@ section#section_future img {
   width: 100%;
 }
 section#section_future .feature {
-  padding: 30px 0px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 10px 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 footer.jumbotron {
@@ -113,12 +113,11 @@ footer.jumbotron {
   background-attachment: fixed;
   margin-bottom: 0px;
   color: #FFFDF5;
-  padding: 120px 0px;
+  padding: 90px 0px;
 }
 footer.jumbotron input {
   background-color: transparent;
   border: solid 1px white;
-  color: white;
 }
 footer.jumbotron hr {
   max-width: 100px;
@@ -126,4 +125,37 @@ footer.jumbotron hr {
 }
 footer.jumbotron .btn {
   font-family: 微軟正黑體;
+}
+
+
+
+
+ul li {
+  cursor: pointer;
+  text-align:center;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #243242;
+  color:white;
+}
+ul li:hover{
+  background: #E8CB7E;
+ 
+}
+footer {
+      background-color: white;
+      color: red;
+      padding: 15px;
+}
+#bookdetail{
+  margin-top: 20px;
+   padding: 15px;
+   font-size: 20px;
+}
+img {
+    display:block;
+    margin:auto;
+}
+#headtext{
+  color:#E8CB7E;
 }

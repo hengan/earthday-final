@@ -1,2 +1,1 @@
-# earthday-final
-JS final project
+# mern-wk14
